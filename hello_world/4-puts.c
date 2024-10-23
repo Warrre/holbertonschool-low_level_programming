@@ -1,7 +1,10 @@
 #include <stdio.h>
-/*
- * main - 4-puts.c  betty marche
- * Return: Always 0
+/**
+ * main - 4-puts.c
+ *
+ * Description: cette fonction marche
+ *
+ * Return: always 0
  */
 int main(void)
 {
