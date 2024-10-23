@@ -1,8 +1,7 @@
 #include <stdio.h>
 /*
- * main - 4-puts.c
- *
- * Return Always 0
+ * main - 4-puts.c  betty marche
+ * Return: Always 0
  */
 int main(void)
 {
