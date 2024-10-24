@@ -1,22 +1,21 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - 0-positive_or_negative.c
- *
- * Return: 0
- */
+* main - 0-positive_or_negative.c
+*
+* Return: 0
+*/
 int main(void)
 {
-
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	/* positive */
+
 	if (n > 0)
-	{	
+	{
 		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
@@ -27,6 +26,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	/* negative */
 	return (0);
 }
