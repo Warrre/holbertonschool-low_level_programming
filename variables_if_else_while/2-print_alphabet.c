@@ -6,9 +6,9 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-	putchar(ch);
-	ch++;
+		putchar(ch);
+		ch++;
 	}
-	putchar('\n');  //Print new line at the end
+	putchar('\n');  /*Print new line at the end*/
 	return (0);
 }
