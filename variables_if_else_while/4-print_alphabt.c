@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - 4-print_alphabt.c
- * This function prints the lowercase alphabet excluding
- * return: Always 0
+ * main - 4-print_alphabt.c Entry point of the program
+ * Description: This function prints the alphabet in lowercase
+ * excluding the letters 'q' and 'e', followed
+ * by a new line.
+ * return: Always returne 0
  */
 int main(void)
 {
