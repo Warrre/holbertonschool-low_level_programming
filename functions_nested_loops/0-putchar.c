@@ -1,21 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - 0-putchar.c
  *
- * Return: Always
+ * Return: Always returns 0
  */
 int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
-
+	write(1, "_putchar\n", 9); /* Écrit "_putchar" suivi d'une nouvelle ligne */
 	return (0);
 }
