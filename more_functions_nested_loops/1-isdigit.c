@@ -1,10 +1,12 @@
 #include "main.h"
-/*
- * _isupper - 1-isdigit.c
- *@c: The character to be checked
- * Return: 1 if c is uppercase, 0 etheraise
+
+/**
+ * _isdigit - Checks if a character is a digit (0 through 9)
+ * @c: The character to be checked
+ *
+ * Return: 1 if c is a digit, 0 otherwise
  */
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
