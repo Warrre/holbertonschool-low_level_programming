@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 /**
  * print_numbers - Prints the numbers from 0 to 9, followed by a new line
  *
@@ -7,11 +7,11 @@
  */
 void print_numbers(void)
 {
-	char digit;
+	char num;
 
-	for (digit = '0'; digit <= '9'; digit++)
+	for (num = '0'; num <= '9'; num++)
 	{
-	putchar(digit);
+	write(1, &num, 1);
 	}
-	putchar('\n');
+	write(1, "\n", 1);
 }
