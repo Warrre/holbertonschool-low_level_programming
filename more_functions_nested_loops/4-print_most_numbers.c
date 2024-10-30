@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * print_numbers - 4-print_most_numbers.c
+ * print_most_numbers - Prints numbers from 0 to 9, excluding 2 and 4
  *
  * Description: This function prints the digits from 0 to 9 to the
  * standard output, but it skips the numbers 2 and 4. It uses _putchar
@@ -12,12 +13,12 @@ void print_most_numbers(void)
 {
 	char num;
 
-	for (num = '0'; num <= '9'; num++)
+		for (num = '0'; num <= '9'; num++)
 	{
-	if (num != '2' && num != '4')
+		if (num != '2' && num != '4')
 	{
-	putchar(num);
+		putchar(num);
 	}
 	}
-	putchar('\n');
+		putchar('\n');
 }
