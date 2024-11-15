@@ -7,7 +7,7 @@
  *
  * Return: A pointer to the duplicated string
  */
-char *str_concat(char *s1, char *s2);
+char *_strdup(char *str)
 {
 	char *dup;
 	unsigned int i, len;
@@ -17,7 +17,6 @@ char *str_concat(char *s1, char *s2);
 
 	for (len = 0; str[len]; len++)
 	dup = malloc(sizeof(char) * (len + 1));
-
 	if (dup == NULL)
 	return (NULL);
 	for (i = 0; i <= len; i++)
