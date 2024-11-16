@@ -5,7 +5,7 @@
  *           which contains a copy of the string given as a parameter.
  * @str: The string to duplicate
  *
- * Return: A pointer to the duplicated string
+ * Return: A pointer to the duplicated string, or NULL if it fails
  */
 char *_strdup(char *str)
 {
@@ -16,10 +16,14 @@ char *_strdup(char *str)
 	return (NULL);
 
 	for (len = 0; str[len]; len++)
+
 	dup = malloc(sizeof(char) * (len + 1));
+
 	if (dup == NULL)
 	return (NULL);
+
 	for (i = 0; i <= len; i++)
 	dup[i] = str[i];
+
 	return (dup);
 }
