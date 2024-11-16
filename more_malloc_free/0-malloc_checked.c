@@ -6,7 +6,6 @@
  * @b: The number of bytes to allocate
  *
  * Return: A pointer to the allocated memory
- * terminates process with status value 98
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,8 +14,7 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 	if (ptr == NULL)
 	{
-
-	exit(98);
+		exit(98);
 	}
 	return (ptr);
 }
