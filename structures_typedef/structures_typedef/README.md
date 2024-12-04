@@ -1,3 +1,1 @@
-#README.md
-
-dog.h
+# README.md
