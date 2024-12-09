@@ -1,18 +1,19 @@
 #ifndef DOG_H
 #define DOG_H
+
 /**
- * struct dog - Structure for a dog
- * @name: Name of the dog
- * @age: Age of the dog
- * @owner: Owner of the dog
+ * struct dog - A dog's basic info
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
  *
- * Description: Defines a structure for a dog with its name, age, and owner
+ * Description: Longer description
  */
-struct Dog
+struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 #endif
