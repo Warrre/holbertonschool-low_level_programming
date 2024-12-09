@@ -2,19 +2,15 @@
 #include "dog.h"
 
 /**
- * print_dog - Imprime une struct dog
- * @d: Pointeur vers la structure dog à imprimer
- *
- * Description: Cette fonction imprime les éléments d'une struct dog.
- * Si un élément est NULL, elle imprime (nil) à la place.
- * Si d est NULL, elle n'imprime rien.
+ * print_dog - Imprime les informations d'une structure dog
+ * @d: Pointeur vers la structure dog
  */
-void print_dog(struct dog *d);
+void print_dog(struct dog *d)
 {
-    if (d == NULL)
-        return;
-
-        printf("Name: %s\n", d->name ? d->name : "(nil)");
+    if (d != NULL)
+    {
+        printf("Name: %s\n", (d->name == NULL) ? "(nil)" : d->name);
         printf("Age: %f\n", d->age);
-        printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
+        printf("Owner: %s\n", (d->owner == NULL) ? "(nil)" : d->owner);
+    }
 }
