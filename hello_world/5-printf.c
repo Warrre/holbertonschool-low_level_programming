@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main-entré
+ *main - print second sentence
  *
  *Description:afficher suivi d'un saut a la ligne
  *
@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-	printf:(with proper grammar, but the outcome is a piece of art"/n")
-	return(0)
+	printf("with proper grammar, but the outcome is a piece of art\n");
+	return (0);
 }
