@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- *main - print second sentence
+ * main - print second sentence
  *
- *Description:afficher suivi d'un saut a la ligne
- *
- *return 0
+ * Description: print a sentence with printf
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
