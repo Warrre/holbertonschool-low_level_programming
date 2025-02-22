@@ -1,16 +1,36 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * add - Adds two integers and prints the result
- * @x: The first integer
- * @y: The second integer
- *
- * Return: The sum of x and y
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: starting integer
  */
-int add(int x, int y)
+
+void print_to_98(int n)
 {
-	int z;
+	int m;
 
-	z = x + y;
-
-	return (z);
+if (n <= 98)
+{
+	for (m = n; m <= 98; m++)
+	{
+		printf("%d", m);
+		if (m != 98)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+}
+else
+{
+	for (m = n; m >= 98; m--)
+	{
+		printf("%d", m);
+		if (m != 98)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+}
 }
