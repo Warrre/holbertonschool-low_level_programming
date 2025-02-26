@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * Write a function that prints the numbers,
- * from 0 to 9, followed by a new line
+ * print_most_numbers - print 1356789
  * Do not print 2 and 4
  */
 void print_most_numbers(void)
