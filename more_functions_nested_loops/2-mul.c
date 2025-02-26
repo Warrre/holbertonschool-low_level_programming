@@ -1,11 +1,13 @@
 #include "main.h"
+
 /**
- * mult - multiplication
- * @; first digit
- * @: second
- * Rturn: result
+ * mul - multiply
+ * @a: first digit
+ * @b: second
+ * Return: result
  */
+
 int mul(int a, int b)
 {
-return (a * b);
+	return (a * b);
 }
