@@ -9,11 +9,12 @@ void print_rev(char *s)
 int len = 0;
 int i;
 
-for (s[len] != '\0')
+/* Calculate the length */
+while (s[len] != '\0')
 {
 len++;
 }
-
+/* Print the string */
 for (i = len -1; i >= 0; i--)
 {
 _putchar(s[i]);
@@ -24,7 +25,7 @@ int main(void)
 {
 char *str;
 
-
+str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 print_rev(str);
 return (0);
 }
