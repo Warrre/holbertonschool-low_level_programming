@@ -1,49 +1,42 @@
 #include "lists.h"
-/**
- * insert_dnodeint_at_index - inserts a new node at a given position
- * @h: pointer to the head of the list
- * @idx: index of the list where the new node should be added
- * @n: data to insert in the new node
- * Return: the address of the new node, or NULL if it failed
- */
+#include <stdlib.h>
 
+/**
+ * insert_dnodeint_at_index - insère un nœud à l'index donné dans une liste
+ * @h: double pointeur vers la tête de la liste
+ * @idx: index où insérer le nouveau nœud
+ * @n: valeur à insérer
+ * Return: adresse du nouveau nœud, ou NULL si échec
+ */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *new_node, *temp = *h;
+	dlistint_t *new, *temp = *h;
 	unsigned int i = 0;
-
-	if (h == NULL)
-		return (NULL);
 
 	if (idx == 0)
 		return (add_dnodeint(h, n));
 
-	/* Traverse to position idx-1 */
-	while (temp != NULL && i < idx - 1)
+	while (temp && i < idx - 1)
 	{
 		temp = temp->next;
 		i++;
 	}
 
-	/* Check if we can insert at given position */
-	if (temp == NULL)
+	if (!temp)
 		return (NULL);
 
-	/* If inserting at end */
-	if (temp->next == NULL)
+	if (!temp->next)
 		return (add_dnodeint_end(h, n));
 
-	/* Create new node */
-	new_node = malloc(sizeof(dlistint_t));
-	if (new_node == NULL)
+	new = malloc(sizeof(dlistint_t));
+	if (!new)
 		return (NULL);
 
-	/* Set up node connections */
-	new_node->n = n;
-	new_node->prev = temp;
-	new_node->next = temp->next;
-	temp->next->prev = new_node;
-	temp->next = new_node;
+	new->n = n;
+	new->next = temp->next;
+	new->prev = temp;
+	temp->next->prev = new;
+	temp->next = new;
 
-	return (new_node);
+	return (new);
 }
